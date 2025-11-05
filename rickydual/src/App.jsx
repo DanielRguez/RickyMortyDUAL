@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Loading from './components/Loading'
 import ListCharacters from './components/ListCharacters'
+import FormularioUsuario from './components/FormularioUsuario'
 
 function App() {
   const [characters, setCharacters] = useState(null);
@@ -50,13 +51,14 @@ function App() {
       <div className='App'>
         <header className="App-header">
           <h1 className='title'>Ricky & Morty</h1>
-          {characters ? (
+          {/* {characters ? (
             //console.log("Pintamos los charactereres")
             <ListCharacters list={characters.results}/>
           ) : (
             <button onClick={requestApi3} className="btn-search">Buscar personajes en los multiversos</button>
             //<Loading/>
-          )}
+          )} */}
+          <FormularioUsuario></FormularioUsuario>
         </header>
       </div>
     </>
